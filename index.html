@@ -8,7 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HR App</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/sign_in_up.css">
     <script src="config.js"></script>
+    <script src="scripts/sign_in_up.js"></script>
+    <script src="scripts/parse.js"></script>
     <script src="scripts/main.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/parse/dist/parse.min.js"></script>
@@ -42,6 +45,7 @@
         Parse.initialize(config.parse_app_id, config.parse_js_id); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
         Parse.serverURL = "https://parseapi.back4app.com/";
 
+        main.sign_in_up_on_load()
         main.menu_item_click();
     }
 </script>
